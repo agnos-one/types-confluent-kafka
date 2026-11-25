@@ -1,0 +1,7 @@
+# Stub-only types: they don't exist at runtime, so they are only for annotations.
+confluent_kafka.cimpl.BatchMessage
+
+# Modules the stubs leave to the library's own types. The library ships `py.typed`, so stubtest would check its
+# source against itself and report the differences it finds there.
+confluent_kafka\.(aio|avro|error|kafkatest|serialization|deserializing_share_consumer)(\..*)?
+confluent_kafka\.schema_registry\.(?!_sync\.(avro|json_schema|protobuf|schema_registry_client)\.).*
